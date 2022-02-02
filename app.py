@@ -20,3 +20,7 @@ def upload() -> ResponseValue:
     storage_service = StorageService()
     res = storage_service.upload("default", file)
     return jsonify(res)
+
+
+if __name__ == "__main__":
+    app.run(host="localhost", port=5000)
