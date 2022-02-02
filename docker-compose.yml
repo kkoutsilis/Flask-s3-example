@@ -12,9 +12,6 @@ x-minio-common: &minio-common
     timeout: 10s
     retries: 3
 
-# starts 4 docker containers running minio server instances.
-# using nginx reverse proxy, load balancing, you can access
-# it through port 9000.
 services:
   minio1:
     <<: *minio-common
@@ -58,8 +55,6 @@ services:
       - minio3
       - minio4
 
-## By default this config uses default local driver,
-## For custom volumes replace with volume driver configuration.
 volumes:
   data1-1:
   data1-2:
