@@ -19,7 +19,7 @@ docker-compose up
 
 ## Flask
 
-We use Flask to create the simplest aplication and expose an upload endpoint.
+We use Flask to create the simplest application and expose an upload endpoint.
 
 ### Setup
 
